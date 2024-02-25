@@ -7,7 +7,9 @@ fun main() {
 }
 
 fun greetUsers() {
-    fun printGreeting(name: String?) {println("Hello, $name!")}
+    fun printGreeting(name: String?) {
+        println("Hello, $name!")
+    }
 
     fun askUserInput(): String? {
         println("Please enter a name (or press Enter to quit):")
