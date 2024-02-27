@@ -2,12 +2,12 @@ package mate.academy
 
 fun greetUsers() {
     while (true) {
-        var text = readlnOrNull()
+        println("Please enter a name (or press Enter to quit):")
+        val text = readlnOrNull()
         if (text.isNullOrEmpty()) {
             break
         }
         println("Hello, $text!")
-        println("Please enter a name (or press Enter to quit):")
     }
 }
 
