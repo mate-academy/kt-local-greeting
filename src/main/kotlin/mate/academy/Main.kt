@@ -8,11 +8,10 @@ fun greetUsers() {
 
     fun printGreeting(name: String) {
         println("Hello, $name!")
-
     }
 
     var name = askUserInput()
-    while (name != "") {
+    while (name.isNotEmpty()) {
         printGreeting(name)
         name = askUserInput()
     }
