@@ -1,12 +1,12 @@
 # Local Greeting
 
-Create a function that asks the user for a name (from the console) until an empty string is introduced.
+In this task create a local function that:
 
-Create a local function that takes a name and prints a greeting.
-
-For each name introduced, print out a greeting.
+- asks the user for a name (from the console) until an empty string is introduced;
+- prints a greeting for **each name**, for example, `Hello, Alex!`.
 
 Here is an example of program execution flow:
+
 ```text
 Please enter a name (or press Enter to quit): 
 Bob
