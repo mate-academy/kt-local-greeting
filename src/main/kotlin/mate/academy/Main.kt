@@ -8,9 +8,8 @@ fun greetUsers() {
     while (true) {
         println("Please enter a name (or press Enter to quit): ")
         val name = readLine()
-        if (name.isNullOrEmpty()) {
-            return
+        if (!name.isNullOrEmpty()) {
+            println("Hello, $name!")
         }
-        println("Hello, $name!")
     }
 }
