@@ -5,13 +5,11 @@ fun main() {
 }
 
 fun greetUsers() {
-    var flag = true
-    while (flag) {
+    while (true) {
         println("Please enter a name (or press Enter to quit): ")
-        val name : String? = readLine()
-        if (name == "") {
-            flag = false
-            continue
+        val name = readLine()
+        if (name.isNullOrEmpty()) {
+            return
         }
         println("Hello, $name!")
     }
