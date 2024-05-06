@@ -1,7 +1,9 @@
 package mate.academy
 
 fun greetUsers() {
-    fun greet(name: String) {
+    fun greet(
+        name: String
+    ) {
         println("Hello, $name!")
     }
     println("Please enter a name (or press Enter to quit): ")
