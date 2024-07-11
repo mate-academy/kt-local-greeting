@@ -14,6 +14,7 @@ fun greetUsers() {
 
     println(greetingText())
     checkResponse(readInput())
+
 }
 
 fun main() {
