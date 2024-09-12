@@ -7,10 +7,9 @@ fun greetUsers() {
     do {
         println(TEXT)
         name = readlnOrNull()
-        if (!name.isNullOrBlank()) {
+        if (name.isNullOrBlank()) break
             println("Hello $name")
-        } else break
-    } while (!name.isNullOrBlank())
+    } while (true)
 }
 
 fun main() {
