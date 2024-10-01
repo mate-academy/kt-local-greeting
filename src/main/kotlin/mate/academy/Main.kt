@@ -3,7 +3,7 @@ package mate.academy
 fun greetUsers() {
     while (true) {
         print("Please enter a name (or press Enter to quit): ")
-        val name = readlnOrNull() ?: ""
+        val name = readLine().orEmpty()
         if (name.isEmpty()) break
         println("Hello, $name!")
     }
