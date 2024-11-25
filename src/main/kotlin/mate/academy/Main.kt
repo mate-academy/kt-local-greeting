@@ -5,6 +5,7 @@ fun greetUsers() {
     val userName = readlnOrNull()
     if (!userName.isNullOrEmpty()) {
         println("Hello, $userName!")
+        greetUsers()
     }
 }
 
