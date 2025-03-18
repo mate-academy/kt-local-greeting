@@ -1,7 +1,9 @@
 package mate.academy
 
 fun greetUsers() {
-    // implement function
+    println("Please enter a name (or press Enter to quit):")
+    var name = readLine()
+    if (name == "") return else println("Hello, $name!")
 }
 
 fun main() {
