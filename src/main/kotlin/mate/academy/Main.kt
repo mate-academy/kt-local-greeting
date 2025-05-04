@@ -1,9 +1,13 @@
 package mate.academy
 
-fun greetUsers() {
-    // implement function
-}
+fun greetUsers(name: String) = "Hello, ${name}!"
 
 fun main() {
-    greetUsers()
+    var name = ""
+    while (true) {
+        println("Please enter a name (or press Enter to quit):")
+        name = readlnOrNull().toString()
+        if (name.isEmpty()) break
+        greetUsers(name)
+    }
 }
