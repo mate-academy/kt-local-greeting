@@ -1,7 +1,11 @@
 package mate.academy
 
 fun greetUsers() {
-    // implement function
+    println("Please enter a name (or press Enter to quit):")
+    val name = readlnOrNull()
+    if (name.isNullOrBlank()) return
+    println("Hello, $name!")
+    greetUsers()
 }
 
 fun main() {
