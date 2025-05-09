@@ -1,7 +1,15 @@
 package mate.academy
 
+import kotlin.system.exitProcess
+
 fun greetUsers() {
-    // implement function
+    println("Please enter a name (or press Enter to quit): ")
+    val input = readLine()
+    if (input.isNullOrBlank()) {
+        exitProcess(0)
+    } else {
+        println("Hello, $input!")
+    }
 }
 
 fun main() {
