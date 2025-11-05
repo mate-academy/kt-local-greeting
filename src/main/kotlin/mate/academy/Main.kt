@@ -6,9 +6,9 @@ fun greetUsers() {
         return readLine()
     }
 
-    while (true) {
-        val name = askName() ?: return
-        if (name.isEmpty()) return
+    var name = askName()
+    while (!name.isNullOrEmpty()) {
         println("Hello, $name!")
+        name = askName()
     }
 }
