@@ -7,10 +7,8 @@ fun greetUsers() {
     }
 
     while (true) {
-        val name = askName() ?: break
-        if (name.isEmpty()) {
-            break
-        }
+        val name = askName() ?: return
+        if (name.isEmpty()) return
         println("Hello, $name!")
     }
 }
