@@ -1,9 +1,18 @@
 package mate.academy
 
 fun greetUsers() {
-    // implement function
+    while (true) {
+        print("Please enter a name (or press Enter to quit): ")
+        val name = readLine().orEmpty()
+
+        if (name.isEmpty()) {
+            break
+        }
+
+        greet(name)
+    }
 }
 
-fun main() {
-    greetUsers()
+fun greet(name: String) {
+    println("Hello, $name!")
 }
