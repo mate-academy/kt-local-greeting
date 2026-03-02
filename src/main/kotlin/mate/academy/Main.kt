@@ -1,10 +1,11 @@
 package mate.academy
 
 fun greetUsers() {
-    // implement function
-    println("Please enter a name (or press Enter to quit):")
-    var name = readln()
-    if (name.isBlank()) return
+    var name: String? = null;
+    while (name?.isBlank() ?: true) {
+        println("Please enter a name (or press Enter to quit):")
+        name = readln()
+    }
     println("Hello, $name!")
 }
 
