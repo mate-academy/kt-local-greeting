@@ -7,7 +7,7 @@ fun greetUsers() {
         if (name.isNullOrEmpty()) {
             break
         }
-        println("Hello, $name")
+        println("Hello, $name!")
     }
 }
 
