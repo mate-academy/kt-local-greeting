@@ -1,7 +1,12 @@
 package mate.academy
 
+import java.util.Scanner
+
 fun greetUsers() {
-    // implement function
+    println("Please enter a name (or press Enter to quit): ")
+    val name = readLine()
+    println("Hello, " + name + "!")
+
 }
 
 fun main() {
