@@ -1,12 +1,14 @@
 package mate.academy
 
-import java.util.Scanner
-
 fun greetUsers() {
-    println("Please enter a name (or press Enter to quit): ")
-    val name = readLine()
-    println("Hello, " + name + "!")
-
+    while (true) {
+        println("Please enter a name (or press Enter to quit): ")
+        val name = readLine()
+        if (name.isNullOrEmpty()) {
+            break
+        }
+        println("Hello, " + name + "!")
+    }
 }
 
 fun main() {
